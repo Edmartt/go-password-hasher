@@ -4,9 +4,10 @@ import (
 	"golang.org/x/crypto/bcrypt" //For generating random salted hash from text plain
 )
 
-//Takes casted to byte string and hash it with a random salt each time
-func HashMaker(password []byte) string {
-	hashed_password, err := bcrypt.GenerateFromPassword(password, bcrypt.DefaultCost)
+//This function takes a string and converts it to hash with pbdkf2 and sha256
+func ConvertToHash(password string) string {
+	
+	hashed_password, err := bcrypt.GenerateFromPassword([]byte(password), bcrypt.DefaultCost)
 	if err != nil {
 		panic(err)
 	}
