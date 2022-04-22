@@ -1,4 +1,4 @@
-module hashing
+module github.com/Edmartt/go-password-hasher
 
 go 1.18
 
