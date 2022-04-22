@@ -54,3 +54,12 @@ func main(){
 ```
 Our output here would be:
 - **true**
+
+#### Unit Test
+
+For running test:
+
+```
+go test tests/hasher_test.go
+
+```
