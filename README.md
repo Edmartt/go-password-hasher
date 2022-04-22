@@ -53,4 +53,4 @@ func main(){
 
 ```
 Our output here would be:
-- **true
+- **true**
