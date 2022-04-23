@@ -63,3 +63,12 @@ For running test:
 go test -v ./tests
 
 ```
+
+#### Coverage
+
+Running coverage:
+
+```
+go test -v --coverprofile=coverage.out -coverpkg ./hasher ./tests
+
+```
