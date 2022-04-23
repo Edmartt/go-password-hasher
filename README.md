@@ -60,6 +60,6 @@ Our output here would be:
 For running test:
 
 ```
-go test tests/hasher_test.go
+go test -v ./tests
 
 ```
